@@ -1660,7 +1660,7 @@ pre .javascript .function {
 }
 .sidebar {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
   width: 0;
@@ -1701,7 +1701,7 @@ pre .javascript .function {
 }
 .sidebar-toggle {
   position: fixed;
-  right: 30px;
+  left: 30px;
   bottom: 45px;
   width: 14px;
   height: 14px;
@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffc44;
+  background: #ffb4ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2903,4 +2903,11 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+body {
+  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532775681812&di=40466f1963fc40defaff3538c01ca365&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01e577566697d032f8754573f1cfd4.jpg%401280w_1l_2o_100sh.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
