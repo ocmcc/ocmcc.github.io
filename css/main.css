@@ -188,7 +188,7 @@ body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 2;
-  color: #555;
+  color: #000;
   background: #fff;
 }
 @media (max-width: 767px) {
@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7f82ac;
+  background: #b54f29;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2904,10 +2904,21 @@ hr {
     text-align: center;
   }
 }
+.header {
+  background: rgba(17,24,30,0.6) none repeat scroll !important;
+}
+.footer {
+  background: rgba(17,24,30,0.6) none repeat scroll !important;
+}
 body {
-  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532775681812&di=40466f1963fc40defaff3538c01ca365&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01e577566697d032f8754573f1cfd4.jpg%401280w_1l_2o_100sh.png");
+  background: url("../../upload_image/thechinesegarden2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+.content {
+  border-radius: 10px;
+  margin-top: 60px;
+  background: rgba(255,255,255,0.4) none repeat scroll !important;
 }
