@@ -1112,7 +1112,7 @@ pre .javascript .function {
   position: relative;
   display: inline-block;
   padding: 0 40px;
-  color: #222;
+  color: #ffd700;
   background: #222;
   border-bottom: none;
 }
@@ -1208,6 +1208,7 @@ pre .javascript .function {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+  color: #7fffd4;
 }
 .menu .menu-item a:hover {
   border-bottom-color: #222;
@@ -1822,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a4bb67;
+  background: #8367ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2921,4 +2922,7 @@ body {
   border-radius: 10px;
   margin-top: 60px;
   background: rgba(255,255,255,0.4) none repeat scroll !important;
+}
+.main-inner {
+  width: 10px;
 }
