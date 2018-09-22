@@ -13,7 +13,7 @@ window.onresize = function(){
     $('body').velocity('stop').velocity({paddingLeft: 350},0);
 }
 $('.site-author-image').click(function(){
-  window.location.href="ocmyc.me";
+  window.location.href="";
 });
 $(document).ready(function () {
   NexT.motion = {};
