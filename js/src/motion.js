@@ -12,7 +12,9 @@ window.onresize = function(){
   if($('aside#sidebar').css('display') != 'none' && $('aside#sidebar').css('width')!='0px')
     $('body').velocity('stop').velocity({paddingLeft: 350},0);
 }
-
+$('.site-author-image').click(function(){
+  window.location.href="ocmyc.me";
+});
 $(document).ready(function () {
   NexT.motion = {};
 

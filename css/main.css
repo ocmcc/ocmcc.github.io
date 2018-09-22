@@ -1112,7 +1112,7 @@ pre .javascript .function {
   position: relative;
   display: inline-block;
   padding: 0 40px;
-  color: #ffd700;
+  color: #ffedb8;
   background: #222;
   border-bottom: none;
 }
@@ -1208,7 +1208,7 @@ pre .javascript .function {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
-  color: #7fffd4;
+  color: #ffedb8;
 }
 .menu .menu-item a:hover {
   border-bottom-color: #222;
@@ -1703,9 +1703,9 @@ pre .javascript .function {
 .sidebar-toggle {
   position: fixed;
   left: 30px;
-  bottom: 45px;
-  width: 14px;
-  height: 14px;
+  top: 30px;
+  width: 17px;
+  height: 17px;
   padding: 5px;
   background: #222;
   line-height: 0;
@@ -1742,6 +1742,7 @@ pre .javascript .function {
   max-width: 96px;
   height: auto;
   border: 2px solid #333;
+  cursor: pointer;
 }
 .site-author-name {
   margin: 5px 0 0;
@@ -1823,7 +1824,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #937fa8;
+  background: #9a6ae0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2906,13 +2907,13 @@ hr {
   }
 }
 .header {
-  background: rgba(17,24,30,0.6) none repeat scroll !important;
+  background: rgba(10,4,4,0.8) none repeat scroll !important;
 }
 .footer {
-  background: rgba(17,24,30,0.6) none repeat scroll !important;
+  background: rgba(13,23,34,0.4) none repeat scroll !important;
 }
 body {
-  background: url("../../upload_image/thechinesegarden2.jpg");
+  background: url("../../upload_image/bcg10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2920,9 +2921,27 @@ body {
 }
 .content {
   border-radius: 10px;
-  margin-top: 60px;
-  background: rgba(255,255,255,0.4) none repeat scroll !important;
+  margin-top: 0px;
+  background: rgba(255,255,255,0.8) none repeat scroll !important;
 }
-.main-inner {
-  width: 10px;
+#sidebar {
+  background: url("../../upload_image/sidebar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sidebar p,
+#sidebar span,
+#sidebar a {
+  color: #fffff0;
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.footer-inner {
+  color: transparent;
 }
