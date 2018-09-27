@@ -1928,7 +1928,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb3ff;
+  background: #ff8b4b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3017,7 +3017,7 @@ hr {
   background: rgba(13,23,34,0.4) none repeat scroll !important;
 }
 body {
-  background: url("../../upload_image/bcg10.jpg");
+  background: url("../../upload_image/");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -3029,7 +3029,7 @@ body {
   background: rgba(255,255,255,0.8) none repeat scroll !important;
 }
 #sidebar {
-  background: url("../../upload_image/sidebar.jpg");
+  background: url("../../upload_image/sidebar5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3037,7 +3037,8 @@ body {
 #sidebar p,
 #sidebar span,
 #sidebar a {
-  color: #fffff0;
+  color: #000;
+  font-size: 16px;
 }
 .post {
   margin-top: 60px;
@@ -3047,5 +3048,5 @@ body {
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 .footer-inner {
-  color: transparent;
+  color: #000;
 }
