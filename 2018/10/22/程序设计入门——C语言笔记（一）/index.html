@@ -71,7 +71,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="-计算机 -C语言 -笔记," />
 
 
 
@@ -82,13 +82,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="MeDi">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1.sublime不能运行一个有输入的程序 2.终端里 vi怎么用（苹果/linux） 3.%d 4.变量定义的一般形式： &amp;lt;类型名称&amp;gt;&amp;lt;变量名称&amp;gt;； 12345int price;int amount;int price,amount; 5.变量的名字 变量需要一个名字，变量的名字是一种“标识符”，意思是它是用来识别这个和那个的不同的名字。 标识符有标识符的构造规则。基本">
+<meta name="keywords" content="-计算机 -C语言 -笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="程序设计入门——C语言笔记（一）">
+<meta property="og:url" content="http://yoursite.com/2018/10/22/程序设计入门——C语言笔记（一）/index.html">
 <meta property="og:site_name" content="MeDi">
+<meta property="og:description" content="1.sublime不能运行一个有输入的程序 2.终端里 vi怎么用（苹果/linux） 3.%d 4.变量定义的一般形式： &amp;lt;类型名称&amp;gt;&amp;lt;变量名称&amp;gt;； 12345int price;int amount;int price,amount; 5.变量的名字 变量需要一个名字，变量的名字是一种“标识符”，意思是它是用来识别这个和那个的不同的名字。 标识符有标识符的构造规则。基本">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-30T10:04:22.045Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MeDi">
+<meta name="twitter:title" content="程序设计入门——C语言笔记（一）">
+<meta name="twitter:description" content="1.sublime不能运行一个有输入的程序 2.终端里 vi怎么用（苹果/linux） 3.%d 4.变量定义的一般形式： &amp;lt;类型名称&amp;gt;&amp;lt;变量名称&amp;gt;； 12345int price;int amount;int price,amount; 5.变量的名字 变量需要一个名字，变量的名字是一种“标识符”，意思是它是用来识别这个和那个的不同的名字。 标识符有标识符的构造规则。基本">
 
 
 
@@ -118,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/22/程序设计入门——C语言笔记（一）/"/>
 
 
 
 
 
-  <title>MeDi</title>
+  <title>程序设计入门——C语言笔记（一） | MeDi</title>
   
 
 
@@ -143,8 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,9 +274,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -302,9 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/22/程序设计入门——C语言笔记（一）/" itemprop="url">程序设计入门——C语言笔记（一）</a></h1>
+          <h1 class="post-title" itemprop="name headline">程序设计入门——C语言笔记（一）</h1>
         
 
         <div class="post-meta">
@@ -417,9 +419,7 @@
       
 
       
-        
-          
-            <p>1.sublime不能运行一个有输入的程序</p>
+        <p>1.sublime不能运行一个有输入的程序</p>
 <p>2.终端里 vi怎么用（苹果/linux）</p>
 <p>3.%d</p>
 <p>4.变量定义的一般形式：</p>
@@ -449,8 +449,6 @@
 <p>如果试图对常量做修改，把它放在赋值运算符的左边，就会被编译器发现，指出为一个错误。(第六行错误/const的变量一般大写表示)</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> AMOUNT = <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> price = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	AMOUNT = <span class="number">90</span>;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"请输入金额（元）："</span>);</span><br><span class="line"></span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;price);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> change =AMOUNT - price;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"找您%d元。\n"</span>,change);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -465,434 +463,51 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/14/十月/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Medi">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/upload_image/tx.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MeDi">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/14/十月/" itemprop="url">十月</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-14T14:25:13+08:00">
-                2018-10-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/日记/" itemprop="url" rel="index">
-                    <span itemprop="name">日记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/计算机-C语言-笔记/" rel="tag"><i class="fa fa-tag"></i> -计算机 -C语言 -笔记</a>
           
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/10/14/十月/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/14/十月/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  125
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
         
           
-            <p>之前想当然的一两天一更新博客还是不太现实的啊。开题报告废了很大功夫才交了上去，而且后续有非常多的坑要填。最近可能就是天天在宿舍看书、到点吃饭的节奏了……</p>
-<p><strong>十月待办事项</strong>：</p>
-<ul>
-<li>哈佛CS50四周的课程（当前进度：week 1）</li>
-<li>精听8篇老托听力（当前进度：3/8）</li>
-<li>图书馆借来的区块链的书都看完，摘出有用的部分</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/30/Trump’s-Party-Makes-Gains-With-U-S-Supreme-Court/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Medi">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/upload_image/tx.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MeDi">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/30/Trump’s-Party-Makes-Gains-With-U-S-Supreme-Court/" itemprop="url">Trump’s Party Makes Gains With U.S. Supreme Court</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-30T21:13:48+08:00">
-                2018-09-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/英语/" itemprop="url" rel="index">
-                    <span itemprop="name">英语</span>
-                  </a>
-                </span>
-
-                
-                
-              
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
             </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/30/Trump’s-Party-Makes-Gains-With-U-S-Supreme-Court/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/30/Trump’s-Party-Makes-Gains-With-U-S-Supreme-Court/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  348
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
+          </div>
+        
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
       
 
       
-        
-          
-            <p><a href="http://www.51voa.com/VOA_Special_English/trump-supreme-court-kennedy-79415.html" target="_blank" rel="noopener">原文链接</a></p>
-<ol>
-<li>The Supreme Court of the United States ended its <strong><u>term</u></strong> this month with a striking, almost dramatic finish. </li>
-</ol>
-<blockquote>
-<p>Supreme Court首字母大写。在英国最高法院的<a href="https://www.supremecourt.uk/news/index.html" target="_blank" rel="noopener">官网</a>中，The Supreme Court首字母均大写。在美国最高法院<a href="https://www.supremecourt.gov/about/traditions.aspx" target="_blank" rel="noopener">官网</a>中，the Supreme Court中the首字母小写。</p>
-</blockquote>
-<ol start="2">
-<li></li>
-</ol>
-<ul>
-<li>It also ruled on tensions between gay rights and <strong><u>opponents</u></strong> of <strong>same-sex</strong> marriage.</li>
-<li>the <strong>second-oldest</strong> person on the high court .</li>
-<li>In the <strong>U.S.</strong>, the president nominates someone to fill an open seat on the <strong>nine-member</strong> court. </li>
-</ul>
-<blockquote>
-<p>oppennent :  one that takes an opposite position (as in a debate, contest, or conflict) </p>
-<p>same-sex ：连字符是讲两个或两个以上的单词连接起来，构成新的形容词性合成词。</p>
-</blockquote>
-<ol start="3">
-<li>Some court watchers call him the “<strong><u>swing voter</u></strong>“ because they <u>have a hard time predicting</u> how he will <strong><u>vote</u></strong> in cases. </li>
-</ol>
-<blockquote>
-<p>swing :  to cause to move vigorously through a wide arc or circle</p>
-</blockquote>
-<ol start="4">
-<li>affect Supreme Court decisions far <strong>into</strong> the future  </li>
-<li>Then a Senate committee holds <strong><u>hearings</u></strong> on the nomination. If committee members vote to approve the <strong>nominee</strong>, the nomination goes to the <strong>full Senate</strong>. </li>
-</ol>
-<blockquote>
-<p>hearing :  opportunity to be heard, to present one’s side of a case, or to be generally known or appreciated .</p>
-</blockquote>
-<ol start="6">
-<li>And a larger, 7-2 majority ruled in the case of a Christian <strong><u>baker</u></strong> in Colorado.</li>
-<li>Kennedy added that state officials had not treated the baker’s <strong>religious objections</strong> respectfully. </li>
-<li>Supreme Court justices aim to be independent <strong>interpreters</strong> of the Constitution and not politicians.  </li>
-<li>Trump himself took the unusual step of publicly releasing a list of Supreme Court candidates, most of whom were traditional <strong><u>jurists</u></strong> that many Republicans believed would <strong>uphold</strong> conservative values.” </li>
-</ol>
-<hr>
-<p>Trump任命最高法院法官的演讲：</p>
-<ol>
-<li>I am a man of my word.</li>
-<li>bipartisan support</li>
-<li>unanimously</li>
-<li>was born and <strong>raised</strong> in…</li>
-<li>is/are beyond dispute</li>
-<li>need <strong>badly</strong></li>
-<li>get hold of </li>
-</ol>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/14/十月/" rel="next" title="十月">
+                <i class="fa fa-chevron-left"></i> 十月
+              </a>
+            
+          </div>
 
-          
-        
-      
-    </div>
-    
-    
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -902,195 +517,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/23/第一篇/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Medi">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/upload_image/tx.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MeDi">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/23/第一篇/" itemprop="url">第一篇</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-23T00:38:42+08:00">
-                2018-09-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/日记/" itemprop="url" rel="index">
-                    <span itemprop="name">日记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/23/第一篇/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/23/第一篇/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  123
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>关于搭这个博客，想了很久，又墨迹了几个月，然后这两天认真的看别人的文章和复制代码也总算搞定了。</p>
-<p>虽然博客搭建的没有那么完善，但想起了上学期文化人类学的代课老师讲的，大概意思是说活在当下，只要做了就是好的，不用想的那么完美才开始做。</p>
-<p>对我这么个拖延的人来说，做了，就比想着强。 </p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -1098,6 +529,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -1372,6 +810,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
