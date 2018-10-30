@@ -418,38 +418,19 @@
 
       
         
-          
-            <p>1.sublime不能运行一个有输入的程序</p>
+          <p>1.sublime不能运行一个有输入的程序</p>
 <p>2.终端里 vi怎么用（苹果/linux）</p>
 <p>3.%d</p>
 <p>4.变量定义的一般形式：</p>
 <p>&lt;类型名称&gt;&lt;变量名称&gt;；</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> price;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> amount;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> price,amount;</span><br></pre></td></tr></table></figure>
-<p>5.变量的名字</p>
-<p>变量需要一个名字，变量的名字是一种“标识符”，意思是它是用来识别这个和那个的不同的名字。</p>
-<p>标识符有标识符的构造规则。基本的原则是：标识符只能由字母、数字、和下划线组成，数字不可以出现在第一个位置上，C语言的关键字（有的地方叫保留字）不可以用做标识符。</p>
-<p>6.对c语言来说赋值和初始化的差异不大。当赋值发生在定义变量的时候，就是变量的初始化。虽然C语言没有强制要求所有的变量都在定义的地方做初始化。但是所有的变量在第一次被使用（出现在赋值运算符的右边）之前应该被赋值一次。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> i;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> j;</span><br><span class="line"></span><br><span class="line">	j=i+<span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,j);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>变量初始化</p>
-<p>&lt;类型名称&gt;&lt;变量名称&gt;=&lt;初始值&gt;；</p>
-<p>int price = 0;</p>
-<p>int amount = 100;</p>
-<p>组合变量定义的时候，也可以在这个定义中单独给单个变量赋初值：</p>
-<p>int price = 0,amount = 100;</p>
-<p>7.int price = 0;</p>
-<p>这一行定义了一个变量。变量的名字是price，类型是int，初始值是0。</p>
-<p>C是一种有类型的语言，所有的变量在使用之前必须定义或声明，所有的变量必须具有确定的数据类型。数据类型表示在变量中可以存放什么样的数据，变量中只能存放指定类型的数据，程序运行过程中也不能改变变量的类型。</p>
-<p>8.c99和ANSI C</p>
-<p>c99允许在程序任何地方定义变量。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> price = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"请输入金额（元）："</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;price);</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> change = <span class="number">100</span> - price;</span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"找您%d元。\n"</span>,change);</span><br></pre></td></tr></table></figure>
-<p>ANSI C只能在代码开头定义变量。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> price = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> change = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"请输入金额（元）："</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d"</span>,$price);</span><br><span class="line"></span><br><span class="line">change = <span class="number">100</span> -price;</span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"找您%d元。\n"</span>，change);</span><br></pre></td></tr></table></figure>
-<p>9.scanf</p>
-<p>10.const是一个修饰符。加在int前面，用来给变量加上要给const（不变的）属性。这个const的属性表示这个变量的值一旦初始化，就不能再修改了。</p>
-<p>如果试图对常量做修改，把它放在赋值运算符的左边，就会被编译器发现，指出为一个错误。(第六行错误/const的变量一般大写表示)</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> AMOUNT = <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> price = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	AMOUNT = <span class="number">90</span>;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"请输入金额（元）："</span>);</span><br><span class="line"></span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;price);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> change =AMOUNT - price;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"找您%d元。\n"</span>,change);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/22/程序设计入门——C语言笔记（一）/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
