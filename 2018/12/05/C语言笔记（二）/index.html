@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="MeDi">
 <meta property="og:description" content="C 程序的创建过程有四个基本步骤：  编辑； 编译； 链接； 执行。  1.编辑编辑的过程就是创建和修改 C 程序的源代码——使用 gedit 编写的程序便是源代码。在 Linux 上，最常用的文本编辑器是 Vim 编辑器。 2.编译编译器可以将源代码转换成机器语言，在编译过程中，会找出错误并报告。这个阶段的输入是在编辑期间产生的文件，常称为源文件。 编译器能找出程序中很多无效的和无法识别的错误，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-05T08:30:56.408Z">
+<meta property="og:updated_time" content="2018-12-06T12:32:51.931Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C语言笔记（二）">
 <meta name="twitter:description" content="C 程序的创建过程有四个基本步骤：  编辑； 编译； 链接； 执行。  1.编辑编辑的过程就是创建和修改 C 程序的源代码——使用 gedit 编写的程序便是源代码。在 Linux 上，最常用的文本编辑器是 Vim 编辑器。 2.编译编译器可以将源代码转换成机器语言，在编译过程中，会找出错误并报告。这个阶段的输入是在编辑期间产生的文件，常称为源文件。 编译器能找出程序中很多无效的和无法识别的错误，">
@@ -382,7 +382,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  689
+                  2k
                 </span>
               
 
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  7
                 </span>
               
             </div>
@@ -439,6 +439,48 @@
 <h4 id="4-执行"><a href="#4-执行" class="headerlink" title="4.执行"></a>4.执行</h4><p>执行阶段就是成功完成了前述的三个过程后，运行程序。但是这个阶段可能会出现各种错误，包括输出错误，计算机什么也不做哦，甚至是计算机崩溃。需要返回编辑阶段，检查并修改源代码。在文件所在目录执行：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./1-1</span><br></pre></td></tr></table></figure>
 <hr>
+<h4 id="2-1-1-格式输出函数-printf"><a href="#2-1-1-格式输出函数-printf" class="headerlink" title="2.1.1 格式输出函数 printf()"></a>2.1.1 格式输出函数 printf()</h4><p>一般形式：printf(格式控制，输出表列)。例如：<code>printf(&quot;%d,%d&quot;,a,b);</code> 括号内包含两个部分：</p>
+<p>（1）<strong>“格式控制”</strong>是用双撇号括起来的一个字符串，称“转换控制字符串”，简称“格式字符串”，它包括两个信息：</p>
+<ul>
+<li><strong>格式声明</strong>：格式声明由 % 和格式字符组成，如 %d （%d 代表输出整数，%f 代表输出实数），它的作用是将输出的数据转换为指定的格式然后输出。格式声明总是由 % 字符开始。</li>
+<li><strong>普通字符</strong>：普通字符即在需要输出时原样输出的字符。例如上例中的 <code>printf(&quot;Please enter a value：&quot;);</code>中的 <code>Please enter a value:</code> 即为原样输出。</li>
+</ul>
+<p>（2）<strong>“输出表列”</strong>是程序需要输出的数据。看下面例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">printf(&quot;I love %d and %d&quot;,x,s);</span><br></pre></td></tr></table></figure>
+<p>第一个 <code>%d</code> 对应的是 x 的值，第二个 <code>%d</code> 对应的是 s 的值。 <code>I love</code> 和 <code>and</code> （注意这里包括空格）都是普通字符会原样输出。 假如 x 的值是 3，s 的值是 4，这条语句将会输出“ I love 3 and 4 ”。</p>
+<h4 id="2-1-2-格式输入函数-scanf"><a href="#2-1-2-格式输入函数-scanf" class="headerlink" title="2.1.2 格式输入函数 scanf()"></a>2.1.2 格式输入函数 scanf()</h4><p>一般形式：scanf(格式控制，地址表列)。<strong>“格式控制”</strong>的含义同 printf 函数。“地址表列”是由若干地址组成的表列，可以是变量的地址。</p>
+<p>看下面的例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scanf(&quot;a=%d,b=%d&quot;,&amp;a,&amp;b);</span><br></pre></td></tr></table></figure>
+<p>在格式字符串中除了有格式声明的 %d 以外，其它普通字符原样输出（如“ a= ”，“ b= ”和“，”），假如给 a 和 b 分别赋值 5 和 6 ，将显示“ a=5，b=6 ”。</p>
+<blockquote>
+<p>注意：scanf()函数中的表列是地址表列。 <code>scanf(&quot;a=%d,b=%d&quot;,&amp;a,&amp;b);</code> 中 a 和 b 前面的 &amp; 不能省掉，这一点要和 printf 作区分。**</p>
+</blockquote>
+<p>printf() 函数和 scanf() 函数我们会在以后的“数据的输入与输出”版块继续讲述。</p>
+<h4 id="2-1-3-注释"><a href="#2-1-3-注释" class="headerlink" title="2.1.3 注释"></a>2.1.3 注释</h4><p>位于“ /<em>…….. </em>/ ”中的和“ // ”后面的内容为注释，用来对程序进行说明；注释在编译时会被自动忽略。</p>
+<h4 id="2-2-1-整型常量："><a href="#2-2-1-整型常量：" class="headerlink" title="2.2.1 整型常量："></a>2.2.1 整型常量：</h4><p>如 0 、100 、-30 等整数都是整型常量。</p>
+<h4 id="2-2-2-实型常量："><a href="#2-2-2-实型常量：" class="headerlink" title="2.2.2 实型常量："></a>2.2.2 实型常量：</h4><p>就是我们通常所说的小数，如 12.34, -5.45, 143.342等，小数还可以用指数形式表现，如32.23e3（表示 32.23<em>10^3）, -323.34e-6（表示 323.34</em>10^-6）, 由于计算机无法表示上角和下角，所以规定以字母 e 或者 E 代表以 10 为底的指数。</p>
+<blockquote>
+<p>注意：e 或者 E 之前必须有数字，且 e 或者 E 后面必须为整数，不能是 12e4.1 或者 e3 这种形式。</p>
+</blockquote>
+<h4 id="2-2-3-字符常量，字符常量有两种："><a href="#2-2-3-字符常量，字符常量有两种：" class="headerlink" title="2.2.3 字符常量，字符常量有两种："></a>2.2.3 字符常量，字符常量有两种：</h4><ol>
+<li>普通字符：用单撇号括起来的一个字符，如 ‘a’ 、’E’ 、’%’ 、’3’ 。不能写成 ‘ab’ 、’12’ 。字符常量只能是一个字符，不包括单撇号。</li>
+<li>转义字符：除了以上形式的字符常量外，C 语言还允许用一种特殊形式的字符常量，就是以字符 <code>\</code> 开头的字符序列，比如我们本节课的 3-1.c 中，<code>\n</code> 代表的就是换行符，显示跳转到下一行。这是一种在屏幕上无法显示的“控制字符”。</li>
+</ol>
+<ul>
+<li>常用的控制字符：</li>
+</ul>
+<h4 id="2-3-1-什么是变量"><a href="#2-3-1-什么是变量" class="headerlink" title="2.3.1 什么是变量"></a>2.3.1 什么是变量</h4><p>在例子 3-1 中的 a，b，c 都是变量。变量代表一个有名字的、具有特殊属性的存储单元。它可以用来保存数据。变量的值是可以改变的。变量在程序中定义的一般形式就是： &lt;类型名称&gt; &lt;变量名称&gt;。例如： <code>int a；</code> <code>int b;</code> <code>int a,b;</code> <code>int price;</code> <code>int amount;</code>等。</p>
+<ul>
+<li><p>int 代表定义的变量是整数类型。 我们在 3-1.c 的例子中便是直接定义了 a，b，c 三个变量为整数类型：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int a，b，c；</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="2-3-2-标识符"><a href="#2-3-2-标识符" class="headerlink" title="2.3.2 标识符"></a>2.3.2 标识符</h4><p>变量需要一个名字，变量的名字便是一种“标识符”，用来区别它和其它不同的变量。用来对变量、函数、数组等命名的字符序列统称为标识符，上面提到的 price 、amount 是标识符，函数名 printf 也是一种标识符。C 语言规定标识符只能由字母、数字和下划线构成，且第一个字符必须为字母或下划线。￥qa，1ew，#22 这些都是非法的标识符。</p>
+<h4 id="2-3-3-变量的赋值与初始化"><a href="#2-3-3-变量的赋值与初始化" class="headerlink" title="2.3.3 变量的赋值与初始化"></a>2.3.3 变量的赋值与初始化</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int price=0;</span><br></pre></td></tr></table></figure>
+<p>变量必须先定义后使用。这一行定义了一个变量，变量的名字是 price，类型是 int，初始的值是 0 。</p>
+<blockquote>
+<p>注意：和数学不同，a=b 在数学中表示关系，即 a 和 b 的值一样；而在程序设计中，a=b 表示要求计算机做一个动作：将 b 的值赋值给 a 。关系是静态的，而动作是动态的。在数学中，a=b 和 b=a 是等价的，而在程序设计中，两者意思相反。</p>
+</blockquote>
 
       
     </div>
@@ -484,8 +526,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/01/加德纳艺术通史（一）/" rel="next" title="加德纳艺术通史（一）">
-                <i class="fa fa-chevron-left"></i> 加德纳艺术通史（一）
+              <a href="/2018/10/22/C语言笔记（一）/" rel="next" title="程序设计入门——C语言笔记（一）">
+                <i class="fa fa-chevron-left"></i> 程序设计入门——C语言笔记（一）
               </a>
             
           </div>
@@ -493,6 +535,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/31/文物库房及藏品的智慧化管理方案/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -578,7 +624,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -661,7 +707,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-编辑"><span class="nav-number">1.</span> <span class="nav-text">1.编辑</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-编译"><span class="nav-number">2.</span> <span class="nav-text">2.编译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-链接"><span class="nav-number">3.</span> <span class="nav-text">3.链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-执行"><span class="nav-number">4.</span> <span class="nav-text">4.执行</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-编辑"><span class="nav-number">1.</span> <span class="nav-text">1.编辑</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-编译"><span class="nav-number">2.</span> <span class="nav-text">2.编译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-链接"><span class="nav-number">3.</span> <span class="nav-text">3.链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-执行"><span class="nav-number">4.</span> <span class="nav-text">4.执行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-1-格式输出函数-printf"><span class="nav-number">5.</span> <span class="nav-text">2.1.1 格式输出函数 printf()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-2-格式输入函数-scanf"><span class="nav-number">6.</span> <span class="nav-text">2.1.2 格式输入函数 scanf()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-3-注释"><span class="nav-number">7.</span> <span class="nav-text">2.1.3 注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-整型常量："><span class="nav-number">8.</span> <span class="nav-text">2.2.1 整型常量：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-2-实型常量："><span class="nav-number">9.</span> <span class="nav-text">2.2.2 实型常量：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-3-字符常量，字符常量有两种："><span class="nav-number">10.</span> <span class="nav-text">2.2.3 字符常量，字符常量有两种：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-1-什么是变量"><span class="nav-number">11.</span> <span class="nav-text">2.3.1 什么是变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-2-标识符"><span class="nav-number">12.</span> <span class="nav-text">2.3.2 标识符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-3-变量的赋值与初始化"><span class="nav-number">13.</span> <span class="nav-text">2.3.3 变量的赋值与初始化</span></a></li></ol></div>
             
 
           </div>
@@ -681,7 +727,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -708,7 +754,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2k字</span>
+  <span class="post-count">博客全站共8.9k字</span>
 </div>
 
         
