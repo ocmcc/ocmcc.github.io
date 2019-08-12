@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[微信读书原型]]></title>
     <url>%2F2019%2F08%2F11%2F%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E5%8E%9F%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[四分页功能及交互发现页： 当前页面的滑动效果，搜索、书城两个二级页面； 搜索页中，点击搜索框的键盘弹出效果/滑动页面回收键盘的效果/回到发现页； 书城页中的轮播图效果/回到发现页； 书架页： 上下拖动时顶部及底部导航栏的半透明效果； 故事页： 故事及朋友两个页面的切换； 我页： 下拉时保持个人信息部分的白色背景。]]></content>
       <tags>
         <tag>产品</tag>
       </tags>
