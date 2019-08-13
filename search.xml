@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[SQL学习笔记]]></title>
+    <url>%2F2019%2F08%2F13%2FSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[SQL语法一个数据库通常包含一个或多个表。每个表有一个名字标识，表包含带有数据的记录（行）。 use RUNOOB；use用于选择数据库 set names utf8；设置使用的字符集 SELECT*FROM Websites；读取数据表信息 SQL对大小写不敏感 某些数据库系统要求每条SQL语句末使用分号来分隔语句 SELECT - 从数据库中提取数据 UPDATE - 更新数据库中的数据 DELETE - 从数据库中删除数据 INSERT INTO - 向数据库中插入新数据 CREATE DATABASE - 创建新数据库 ALTER DATABASE - 修改数据库 CREATE TABLE - 创建新表 ALTER TABLE - 变更（改变）数据库表 DROP TABLE - 删除表 CREATE INDEX - 创建索引（搜索键） DROP INDEX - 删除索引 SQL SELECT语法： SELECT column_name,column_name FROM table_name; //在表中取出列的操作 SELECT * FROM table_name; //从表中取出所有列 SELECT DISTINCT column_name,column_name FROM table_name; //在表中，一个列可能会包含多个重复值，DISTINCT用于返回唯一不同的值。 SELECT column_name,column_name FROM table_name WHERE column_name operator value; //SELECT * FROM Websites WHERE country =’CN’; //SELECT * FROM Websites WHERE id=1; SQL 使用单引号来环绕文本值（大部分数据库系统也接受双引号）。 在实例中 ‘CN’ 文本字段使用了单引号。 如果是数值字段，请不要使用引号。 | 运算符 | 描述 || :—— | :——————————————————— || = | 等于 || &lt;&gt; | 不等于。注释：在 SQL 的一些版本中，该操作符可被写成 != || &gt; | 大于 || &lt; | 小于 || &gt;= | 大于等于 || &lt;= | 小于等于 || BETWEEN | 在某个范围内 || LIKE | 搜索某种模式 || IN | 指定针对某个列的多个可能值 | //SELECT * FROM Websites WHERE alexa &gt; 15 AND (country=’CN’ OR country=’USA’); (AND &amp; OR 运算符用于基于一个以上的条件对记录进行过滤。) SELECT column_name,column_name FROM table_name ORDER BY column_name,column_name ASC|DESC SELECT * FROM Websites ORDER BY alexa; 按照alexa（默认）升序排列 SELECT * FROM Websites ORDER BY alexa DESC; SELECT * FROM Websites ORDER BY country,alexa; ORDER BY 多列的时候，先按照第一个column name排序，再按照第二个column name排序；如上述教程最后一个例子： 1）、先将country值这一列排序，同为CN的排前面，同属USA的排后面； 2）、然后在同属CN的这些多行数据中，再根据alexa值的大小排列。 3）、ORDER BY 排列时，不写明ASC DESC的时候，默认是ASC。 即 desc 或者 asc 只对它紧跟着的第一个列名有效，其他不受影响，仍然是默认的升序。 1234&gt; order by A,B 这个时候都是默认按升序排列&gt; order by A desc,B 这个时候 A 降序，B 升序排列&gt; order by A ,B desc 这个时候 A 升序，B 降序排列&gt;]]></content>
+      <tags>
+        <tag>SQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[微信读书原型]]></title>
     <url>%2F2019%2F08%2F11%2F%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E5%8E%9F%E5%9E%8B%2F</url>
     <content type="text"><![CDATA[四分页功能及交互发现页： 当前页面的滑动效果，搜索、书城两个二级页面； 搜索页中，点击搜索框的键盘弹出效果/滑动页面回收键盘的效果/回到发现页； 书城页中的轮播图效果/回到发现页； 书架页： 上下拖动时顶部及底部导航栏的半透明效果； 故事页： 故事及朋友两个页面的切换； 我页： 下拉时保持个人信息部分的白色背景。]]></content>
