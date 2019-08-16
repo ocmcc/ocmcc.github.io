@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[《启示录》笔记]]></title>
+    <url>%2F2019%2F08%2F16%2F%E3%80%8A%E5%90%AF%E7%A4%BA%E5%BD%95%E3%80%8B%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[[TOC] 本书结构 人员：定义和开发产品的团队成员的角色和职责 流程：探索、开发富有创意的产品时，反复应用的步骤和成功的实践经验 产品：富有创意的产品具有的鲜明特性 成功产品的规律 产品经理的任务是探索产品的价值、可用性、可行性 探索（定义）产品需要产品经理、交互设计师、软件架构师通力合作 开发人员不擅长用户体验设计，因为开发人员想的是实现模型，而用户看重的是产品的概念模型 用户体验设计就是交互设计、视觉设计（对硬件设备则是工业设计） 功能（产品需求）和用户体验设计密不可分 产品创意必须尽早地、反复地接受目标用户的试用，以便获取有效的用户体验 为了验证产品的价值和可用性，必须尽早地、反复地请目标用户测试产品创意 采用高保真的原型是全体团队成员了解用户需求和用户体验的最有效的途径 产品经理的目标是在最短时间内把握复杂的市场/用户需求，确定产品的基本要求——价值、可用性、可行性 一旦认定产品符合以上基本要求，它就是一个完整的概念，去掉任何因素，都不能达到预期的结果 PART1人员产品经理 评估产品机会（相较MRD，作者更喜欢机会评估，但没有介绍具体方法） 定义要开发的产品（产品特征、功能、用户体验、发布标准） 交互设计师 负责深入理解目标用户，设计有价值的、可用的功能，以及用户导航和产品使用流程 CH.2产品设计三大误区（P8） 由市场营销人员定义产品 两人分担定义产品的工作 一人兼任两项工作 CH.3产品管理与项目管理(采取何种产品发布模式)key word:火车模型发布模式 CH.4产品管理与产品设计 用户研究 交互设计 视觉设计 原型制作 将功能和设计结合，并请开发评估是否可行。 CH.5产品管理与开发开发帮产品经理完善产品定义方式 让开发直接面对用户或顾客，体会用户的困惑和疑虑，了解问题的严重性，这样好点子会随之而来，譬如，可以邀请一名开发人员参加产品原型测试。 向开发了解最新技术发展动向，讨论哪些新技术可以用到产品里。开展头脑风暴，看看目前已实现的技术或即将实现的技术是否能解决手头上的问题。 让开发人员在探索（定义）产品的初期阶段参与评估产品设计，协助策划方案。产品经理常犯这一类错误×，即完成产品定义后，便扔给开发团队，置之不理。 产品经理应如下配合开发工作 产品经理只定义满足基本要求的产品。产品经理应意识到，自己要定义的不是最终产品，而是满足要求的基本产品。只有这样，产品和开发才能形成良好互动。 一旦产品进入开发阶段，要尽可能避免修改产品的需求和设计。虽然有些事情超出你的控制范围，导致项目波动是不可避免的，但是不要在此时尝试突发奇想的点子。 产品开发阶段难免会产生问题。产品经理应迅速采取行动，在维持产品的基本功能、尽量避免修改的原则上，拿出解方案。 与异地的开发人员的沟通（P25）：问题：开发团队距离远，语言、文化、视差带来的沟通难度大。 办法：将高保真原型作为产品说明文档的基础 问题2&amp;3…… 关于业务外包（P27）关于重构（P29）CH6招聘产品经理用户立场理想的产品经理不一定来自产品的目标市场，但是必须融入目标市场。 长期从事某一行业的人通常会落入一个常见的心理陷阱：以为自己了解目标客户，盲目自信。产品经理应该习惯放下自己的成见。 了解应聘者对目标市场的感觉，最重要的是看对方是尊重目标市场希望融入其中，还是打算一意孤行改变用户习惯。对于国际化的产品和针对特定地域的产品来说，换位思考尤其重要。 CH7管理产品经理怎样评估产品经理工作一种考察业绩的指标：用户净推荐值（net promoter score,NPS） CH10管理上司十条经验 1.为项目波动做好准备 2.注意沟通的方式与频率 3.会前沟通 4.多提建议，少谈问题 5.向上司借力 6.充分准备 7.缩短邮件篇幅 8.多用数据和事实说话 9.内部宣传 10.做让领导省心的员工]]></content>
+      <categories>
+        <category>产品</category>
+      </categories>
+      <tags>
+        <tag>-笔记 -产品</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据分析体系（一）]]></title>
+    <url>%2F2019%2F08%2F16%2F%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%BD%93%E7%B3%BB%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[常用数据分析指标 指标拆分找到影响因素较大的指标，对其进行分解。如下图，分析GMV下的一级指标和二级指标。当一级指标有波动或者异常，分析二级指标来寻找原因。 按照用户类型拆分 按照用户来源渠道拆分 流量漏斗 不同产品的关注指标]]></content>
+      <categories>
+        <category>产品</category>
+      </categories>
+      <tags>
+        <tag>-数据分析</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[SQL学习笔记]]></title>
     <url>%2F2019%2F08%2F13%2FSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[SQL语法一个数据库通常包含一个或多个表。每个表有一个名字标识，表包含带有数据的记录（行）。 use RUNOOB；use用于选择数据库 set names utf8；设置使用的字符集 SELECT*FROM Websites；读取数据表信息 SQL对大小写不敏感 某些数据库系统要求每条SQL语句末使用分号来分隔语句 SELECT - 从数据库中提取数据 UPDATE - 更新数据库中的数据 DELETE - 从数据库中删除数据 INSERT INTO - 向数据库中插入新数据 CREATE DATABASE - 创建新数据库 ALTER DATABASE - 修改数据库 CREATE TABLE - 创建新表 ALTER TABLE - 变更（改变）数据库表 DROP TABLE - 删除表 CREATE INDEX - 创建索引（搜索键） DROP INDEX - 删除索引 SQL SELECT语法： SELECT column_name,column_name FROM table_name; //在表中取出列的操作 SELECT * FROM table_name; //从表中取出所有列 SELECT DISTINCT column_name,column_name FROM table_name; //在表中，一个列可能会包含多个重复值，DISTINCT用于返回唯一不同的值。 SELECT column_name,column_name FROM table_name WHERE column_name operator value; //SELECT * FROM Websites WHERE country =’CN’; //SELECT * FROM Websites WHERE id=1; SQL 使用单引号来环绕文本值（大部分数据库系统也接受双引号）。 在实例中 ‘CN’ 文本字段使用了单引号。 如果是数值字段，请不要使用引号。 | 运算符 | 描述 || :—— | :——————————————————— || = | 等于 || &lt;&gt; | 不等于。注释：在 SQL 的一些版本中，该操作符可被写成 != || &gt; | 大于 || &lt; | 小于 || &gt;= | 大于等于 || &lt;= | 小于等于 || BETWEEN | 在某个范围内 || LIKE | 搜索某种模式 || IN | 指定针对某个列的多个可能值 | //SELECT * FROM Websites WHERE alexa &gt; 15 AND (country=’CN’ OR country=’USA’); (AND &amp; OR 运算符用于基于一个以上的条件对记录进行过滤。) SELECT column_name,column_name FROM table_name ORDER BY column_name,column_name ASC|DESC SELECT * FROM Websites ORDER BY alexa; 按照alexa（默认）升序排列 SELECT * FROM Websites ORDER BY alexa DESC; SELECT * FROM Websites ORDER BY country,alexa; ORDER BY 多列的时候，先按照第一个column name排序，再按照第二个column name排序；如上述教程最后一个例子： 1）、先将country值这一列排序，同为CN的排前面，同属USA的排后面； 2）、然后在同属CN的这些多行数据中，再根据alexa值的大小排列。 3）、ORDER BY 排列时，不写明ASC DESC的时候，默认是ASC。 即 desc 或者 asc 只对它紧跟着的第一个列名有效，其他不受影响，仍然是默认的升序。 1234&gt; order by A,B 这个时候都是默认按升序排列&gt; order by A desc,B 这个时候 A 降序，B 升序排列&gt; order by A ,B desc 这个时候 A 升序，B 降序排列&gt;]]></content>
@@ -12,8 +34,11 @@
     <title><![CDATA[微信读书原型]]></title>
     <url>%2F2019%2F08%2F11%2F%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E5%8E%9F%E5%9E%8B%2F</url>
     <content type="text"><![CDATA[四分页功能及交互发现页： 当前页面的滑动效果，搜索、书城两个二级页面； 搜索页中，点击搜索框的键盘弹出效果/滑动页面回收键盘的效果/回到发现页； 书城页中的轮播图效果/回到发现页； 书架页： 上下拖动时顶部及底部导航栏的半透明效果； 故事页： 故事及朋友两个页面的切换； 我页： 下拉时保持个人信息部分的白色背景。]]></content>
+      <categories>
+        <category>产品</category>
+      </categories>
       <tags>
-        <tag>产品</tag>
+        <tag>-原型 -产品</tag>
       </tags>
   </entry>
   <entry>
