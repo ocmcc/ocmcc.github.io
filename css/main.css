@@ -1964,7 +1964,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #39b8f5;
+  background: #bfffaa;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3090,7 +3090,7 @@ body {
   padding: 13px;
 }
 #sidebar {
-  background: url("../../upload_image/sidebar6.jpg");
+  background: url("../../upload_image/sidebar7.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
