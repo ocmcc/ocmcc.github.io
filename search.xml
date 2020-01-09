@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[kali 2019.4安装乱码问题]]></title>
+    <url>%2F2020%2F01%2F10%2Fkali-2019-4%E5%AE%89%E8%A3%85%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[一、更新国内源，使用vim编辑器修改：vim /etc/apt/sources.list添加 需要使用的vim命令 按i进入编辑 添加后按esc 输入:wq保存并退出编辑 二、上面编辑完成然后在命令行执行下面命令 1apt-get clean &amp;&amp; apt-get update -y 三、在命令行输入”dpkg-reconfigure locales”。进入图形化界面之后，（空格是选择，Tab是切换，*是选中），选中zh_CN.UTF-8，确定后，将h_CN.UTF-8选为默认。 四、安装中文字体，在命令行中输入apt-get install xfonts-intl-chinese 和 apt-get install ttf-wqy-microhei 五、重启系统，到登录界面，右上角语言列表注意是否为zb_CN.utf8,点开列表，确定选中的为中文-中国 注意在安装kali过程中，网络镜像选择否的情况下，无法下载中文字体以及更新镜像。选择“是”之后，就可以顺利下载字体了。不知道是否是这一选项导致后面的字体下载受到影响。 这里选择“是”]]></content>
+      <tags>
+        <tag>-kali</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[cookie&session]]></title>
+    <url>%2F2020%2F01%2F10%2Fcookie-session%2F</url>
+    <content type="text"><![CDATA[Cookie参考https://www.jianshu.com/p/2ceeaef92f20 https://www.jianshu.com/p/7f0001eddc56 cookie的查看https://blog.csdn.net/ZWE7616175/article/details/80274850 使用burp替换cookie SessionSession Fixation参考https://www.cnblogs.com/softidea/p/6040283.html https://segmentfault.com/a/1190000012452149 https://www.cnblogs.com/luminji/archive/2012/05/30/2511357.html https://www.iteye.com/blog/holdbelief-517935 https://www.cnblogs.com/davidwang456/p/3593578.html https://www.jianshu.com/p/c4b32eb24894 https://www.cnblogs.com/phpstudy2015-6/p/6776919.html ！！！]]></content>
+      <tags>
+        <tag>-web security -cookie -session</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[图片隐写]]></title>
+    <url>%2F2020%2F01%2F03%2F%E5%9B%BE%E7%89%87%E9%9A%90%E5%86%99%2F</url>
+    <content type="text"><![CDATA[F12的network png格式图片里包含是flag 图片隐写 数据隐藏 如果在数字照片中隐藏文件，最好选择定制的数码照片而不是普通照片作为载体，例如，不要从谷歌/百度图片下载图像。用这种照片作为载体，很容易获取到原始载体文件，这样通过对比原始载体文件和可疑文件，识别差异，可以分析得到可疑文件嵌入的隐藏内容。 将数据隐藏程序和载体文件存储在移动存储介质中是清除数据隐藏痕迹的第一步。 除载体和数据隐藏程序外，密码也是隐藏要点之一。在载体文件中嵌入消息时要使用强密码加密。 不要使用操作系统的密码、在网页浏览器中存储的密码或网络设备使用的密码。 密码应包含大小写、数字和特殊字符的组合。 保存密码的地方。（书中推荐Bruce Schneier的PasswordSafe） 特殊字符：]]></content>
+      <tags>
+        <tag>hacker101</tag>
+        <tag>CTF</tag>
+        <tag>整理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python数字类型及操作]]></title>
     <url>%2F2019%2F12%2F24%2Fpython%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B%E5%8F%8A%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[摘要 整数类型的无限范围及4种进制表示 浮点数类型的近似无限范围、小尾数及科学计数法 +、-、*、/、//、%、**、二元增强赋值操作符 abs()、divmod()、pow()、round()、max()、min() int()、float()、complex() 整数类型 可正可负，没有取值范围限制 pow(x,y)函数：计算xy 十进制：1010，99，-217 二进制：0b或0B开头，0b010，-0B101 b - binary 八进制: 0o或0O开头，0o123，-0O456 o - octal 十六进制：0x或0X开头，0x9a，-0X89 hex 浮点类型浮点数取值范围和小数精度都存在限制，但常规计算可忽略 取值范围数量级约-10308至10308，精度数量级10-16,因此存在不确定尾数 12&gt;&gt;&gt; 0.1+0.20.30000000000000004 比较浮点数大小时，用round()函数。 round(x,d)：对x四舍五入，d是小数截取位数，Python3的round()函数四舍五入取整时，采用最近偶数原则 12345678&gt;&gt;&gt;round(1.5)2&gt;&gt;&gt;round(2.5)2&gt;&gt;&gt;round(3.5)4&gt;&gt;&gt;round(4.5)4 数值运算操作符 x/y（除，产生浮点数结果，和c语言不一样）与x//y（整数除）的区别 12&gt;&gt;&gt; 10/33.3333333333333335 12&gt;&gt;&gt; 10//33 x%y 余数，模运算，10%3结果为一 x**y 幂运算，x的y次幂 （当y是小数时，开方运算，10**0.5的结果是&radic;10） 数字类型的关系类型间可以混合运算，生成结果为“最宽”类型 整数→浮点数→复数 整数 + 浮点数 = 浮点数，结果的结尾就变成不确定尾数 数值运算函数divmod(x,y) 商余，（x//y,x%y）,同时输出商和余数。 12&gt;&gt;&gt; divmod(10,3)(3, 1) pow(x,y[,z])幂余，(x**y)%z，[..]表示参数z可省略 12&gt;&gt;&gt; pow(3,pow(3,99),10000)4587 上面的代码如果省略10000，会得不到结果。]]></content>
